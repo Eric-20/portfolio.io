@@ -1,155 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./icons/fontawesome-free-6.1.1-web/css/all.css">
-    <title>Portfolio</title>
-</head>
-<body>
-    
-    <header>
-        <div class="logo">
-            <h1>EI</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mei Portfolio</title>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="navbar-container">
+      <div class="logo">
+        <img src="./img/mei logo 2.png" alt="" />
+      </div>
+      <div class="navbar">
+        <a href="">Home</a>
+        <a href="">Services</a>
+        <a href="">Projects</a>
+        <a href="" class="main-btn">Contact us</a>
+      </div>
+    </div>
+
+    <div class="img-bg">
+      <img src="./img/behind.png" alt="" />
+    </div>
+
+    <div class="home-banner">
+      <div class="content">
+        <div class="title">
+          <h2>Hey I'm Eric Ishimwe at your service,</h2>
+          <h1>
+            Crafting intuitive interfaces, captivating visuals, and seamless web
+            solutions that bring your brand to life.
+          </h1>
         </div>
-        
-        <nav>
-            <ul>
-                <!-- <li><a href="#">home</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Projects</a></li> -->
-            </ul>
-        </nav>
+        <a href="">Explore Design projects</a>
+      </div>
+    </div>
 
-        <div class="about">
-            <h1>ERIC ISHIMWE</h1>
-            <h2>UI/UX & Web Designer</h2>
-            <!-- <a href="#about-me" class="btn">More About me</a> -->
-            <i class="fas fa-arrow"></i>
-        </div>
-        
+    <div class="services-container">
+      <div class="title">
+        <h2>Our Services: Tailored Design and Development Solutions</h2>
+        <h1>
+          From stunning visuals to seamless user experiences, we offer a full
+          spectrum of services that elevate your brand and drive results.
+        </h1>
+      </div>
 
-    </header>
-
-    <main>
-        <div class="about-me">
-            <h1>MORE ABOUT ME</h1>
-            <img src="./img/1 (2).jpg" alt="picture">
-            <p>I'm in University in my last year
-                majoring in Software Engineering in the Adventist University
-                of Central Africa residing in Rwanda.
-                <br><br>
-                Since 2019, after choosing Software Engineering, I wondered
-                where I would fit as an IT due to that I loved drawing, and 
-                finally I started Web Development, it was somehow getting me 
-                into the drawing atmosphere and I got hooked by it and started
-                learning the basics and developed some small projects until 2021,
-
-                and that's when I heard about Figma from a friend and I searched about it
-                and started to play around with it and because of it, I made my first paying
-                job with another friend who dealt with the web development and I with the project branding.
-
+      <div class="cards-container">
+        <div class="service-card primary">
+          <div class="content">
+            <div class="title">
+              <div class="icon">
+                <svg
+                  width="41"
+                  height="40"
+                  viewBox="0 0 41 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.80584 34.3367L16.4125 23.73M29.7692 19.0133L26.5942 28.5383C26.5435 28.691 26.4567 28.8292 26.3413 28.9412C26.2258 29.0532 26.085 29.1357 25.9308 29.1817L6.4675 34.9667C6.29215 35.0187 6.10588 35.0217 5.92895 34.9753C5.75203 34.9289 5.59122 34.8348 5.46405 34.7033C5.33687 34.5718 5.24819 34.408 5.20766 34.2296C5.16713 34.0513 5.1763 33.8652 5.23417 33.6917L11.5542 14.735C11.5995 14.5989 11.6735 14.4741 11.7713 14.3692C11.8691 14.2642 11.9883 14.1815 12.1208 14.1267L21.0992 10.43C21.2817 10.3546 21.4825 10.335 21.6761 10.3735C21.8698 10.4121 22.0478 10.5071 22.1875 10.6467L29.5275 17.99C29.6588 18.1213 29.751 18.2866 29.7937 18.4673C29.8364 18.6481 29.8279 18.8371 29.7692 19.0133Z"
+                    stroke="#ffffff"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M29.9658 18.4267L34.6792 13.7117C35.3041 13.0866 35.6551 12.2389 35.6551 11.355C35.6551 10.4711 35.3041 9.62343 34.6792 8.99833L31.1458 5.46167C30.8363 5.152 30.4688 4.90634 30.0642 4.73874C29.6597 4.57114 29.2262 4.48488 28.7883 4.48488C28.3505 4.48488 27.9169 4.57114 27.5124 4.73874C27.1079 4.90634 26.7404 5.152 26.4308 5.46167L21.7175 10.1767M19.9475 20.1933C19.7153 19.9612 19.4396 19.7771 19.1362 19.6515C18.8329 19.526 18.5077 19.4614 18.1794 19.4615C17.8511 19.4615 17.526 19.5263 17.2227 19.652C16.9193 19.7777 16.6438 19.9619 16.4117 20.1942C16.1795 20.4264 15.9954 20.7021 15.8699 21.0054C15.7443 21.3088 15.6797 21.6339 15.6798 21.9623C15.6799 22.2906 15.7446 22.6157 15.8703 22.919C15.996 23.2223 16.1803 23.4979 16.4125 23.73C16.8815 24.1988 17.5175 24.462 18.1806 24.4619C18.8437 24.4617 19.4796 24.1982 19.9483 23.7292C20.4171 23.2602 20.6804 22.6242 20.6802 21.9611C20.68 21.298 20.4165 20.6621 19.9475 20.1933Z"
+                    stroke="#ffffff"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h1>UI/UX design</h1>
+            </div>
+            <p>
+              We dive deep into understanding your audience and their needs,
+              creating designs that are both engaging and easy to navigate,
+              ensuring your customers enjoy every interaction with your brand.
             </p>
-
+            <a href="mailto: ishimweeric2013@gmail.com"> Reach out</a>
+          </div>
         </div>
-    </main>
 
-
-    <main>
-        <div class="skills">
-            <h1>skills</h1>
-            <div class="skill-icon">
-                <i class="fas fa-cogs"></i>
+        <div class="column-cards">
+          <div class="service-card">
+            <div class="content">
+              <div class="title">
+                <div class="icon">
+                  <svg
+                    width="41"
+                    height="40"
+                    viewBox="0 0 41 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.97915 3.45666C10.1913 3.55869 10.3704 3.71857 10.4957 3.9179C10.621 4.11722 10.6875 4.34789 10.6875 4.58333C10.6875 5.96666 11.2075 6.76333 11.8591 7.73333L11.9075 7.80333C12.4608 8.62666 13.1875 9.705 13.1875 11.25C13.1875 12.8267 12.3925 14.2167 11.1808 15.0417C11.4997 15.3083 11.7808 15.6378 12.0241 16.03C12.8175 17.3133 13.1875 19.275 13.1875 22.0917C13.1875 24.945 12.8041 28.3717 12.1791 31.1083C11.8691 32.4683 11.4841 33.7233 11.0258 34.665C10.8104 35.1341 10.5237 35.567 10.1758 35.9483C9.83248 36.3 9.30415 36.675 8.60415 36.675C7.90415 36.675 7.37581 36.3 7.03415 35.9483C6.68627 35.567 6.39954 35.1341 6.18415 34.665C5.72415 33.7217 5.33915 32.4683 5.02915 31.1067C4.37845 28.1447 4.04049 25.1226 4.02081 22.09C4.02081 19.2733 4.39081 17.3133 5.18415 16.03C5.40952 15.6568 5.69439 15.3229 6.02748 15.0417C5.40908 14.6213 4.90292 14.056 4.55315 13.3951C4.20338 12.7342 4.02062 11.9977 4.02081 11.25C4.02081 10.6367 4.02081 9.58166 4.65915 8.22C5.28415 6.88666 6.47248 5.355 8.65581 3.60666C8.83983 3.45947 9.0617 3.36729 9.29584 3.34075C9.52998 3.31421 9.76686 3.35439 9.97915 3.45666ZM6.52081 11.2483C6.52081 11.8009 6.74031 12.3324 7.13101 12.7231C7.52171 13.1138 8.05161 13.3333 8.60415 13.3333C9.15668 13.3333 9.68658 13.1138 10.0773 12.7231C10.468 12.3324 10.6875 11.8025 10.6875 11.25C10.6875 10.5183 10.3791 10.0117 9.78415 9.12666L9.76415 9.09666C9.38248 8.53 8.93081 7.85833 8.61081 6.99666C7.70581 7.91666 7.20581 8.68 6.92415 9.28C6.52081 10.14 6.52081 10.7533 6.52081 11.2483ZM7.31081 17.3417C6.89748 18.0117 6.52081 19.385 6.52081 22.09C6.52081 24.7583 6.88415 27.9983 7.46581 30.55C7.75915 31.8333 8.09248 32.875 8.43081 33.5683C8.49304 33.6961 8.55081 33.8044 8.60415 33.8933C8.65748 33.8044 8.71526 33.6961 8.77748 33.5683C9.11581 32.875 9.44915 31.8317 9.74248 30.55C10.3258 28 10.6875 24.76 10.6875 22.09C10.6875 19.385 10.3108 18.0117 9.89748 17.3417C9.77173 17.1169 9.5836 16.9334 9.35581 16.8133C9.11949 16.709 8.86217 16.6611 8.60415 16.6733C8.27081 16.6733 8.03248 16.725 7.85248 16.8133C7.62469 16.9334 7.43656 17.1169 7.31081 17.3417ZM17.3541 24.8633C16.4714 24.7144 15.6126 24.4475 14.8008 24.07C14.8497 23.1247 14.8636 22.178 14.8425 21.2317C15.5941 21.7367 16.4425 22.1083 17.3541 22.315V17.5C17.3541 16.837 17.6175 16.2011 18.0864 15.7322C18.5552 15.2634 19.1911 15 19.8541 15H26.5208C26.5207 13.6012 26.1295 12.2302 25.3912 11.0421C24.6529 9.85391 23.597 8.8959 22.3429 8.27629C21.0888 7.65668 19.6863 7.40016 18.2941 7.5357C16.9018 7.67124 15.5752 8.19346 14.4641 9.04333C14.1308 8.12166 13.6558 7.41666 13.3258 6.92666L13.2591 6.82666C14.7566 5.77107 16.5152 5.14714 18.3431 5.02298C20.171 4.89881 21.9978 5.27919 23.6243 6.12258C25.2507 6.96598 26.6141 8.23997 27.5658 9.8055C28.5175 11.371 29.0208 13.1679 29.0208 15H34.8541C35.5172 15 36.1531 15.2634 36.6219 15.7322C37.0908 16.2011 37.3541 16.837 37.3541 17.5V32.5C37.3541 33.163 37.0908 33.7989 36.6219 34.2678C36.1531 34.7366 35.5172 35 34.8541 35H19.8541C19.1911 35 18.5552 34.7366 18.0864 34.2678C17.6175 33.7989 17.3541 33.163 17.3541 32.5V24.8633ZM19.8541 24.9683V32.5017H34.8541V17.5017H28.7041C28.1858 19.5105 27.0554 21.3084 25.4698 22.6462C23.8841 23.984 21.9216 24.7955 19.8541 24.9683ZM26.0941 17.5017H19.8541V22.4567C21.2547 22.3004 22.583 21.7527 23.6866 20.8764C24.7902 20 25.6246 18.8304 26.0941 17.5017Z"
+                      fill="#02c39a"
+                    />
+                  </svg>
+                </div>
+                <h1>Graphic design</h1>
+              </div>
+              <p>
+                We bring your ideas to life with creativity and precision,
+                whether it’s crafting eye-catching logos, stunning marketing
+                materials, or cohesive brand identities.
+              </p>
+              <a href="mailto: ishimweeric2013@gmail.com"> Reach out</a>
             </div>
-            <div class="skill-list">
-                <ul>
-                <li>Communication & public speaking</li>
-                <li>Designing in Figma, Adobe Illustrator</li>
-                <li>Programming in C, python, java</li>
-                <li>Development in HTML, CSS</li>
-                <li>Typing</li>
-                <li>UI/UX & Web Design</li>
-                <li>Drawing</li>
-            </ul>
-            </div>     
-        </div>
-    </main>
+          </div>
 
-    <main>
-        <div class="languages">
-            <h1>languages</h1>
-            <div class="language-icon">
-                <i class="fas fa-language"></i>
+          <div class="service-card">
+            <div class="content">
+              <div class="title">
+                <div class="icon">
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.593 12.5505L4.63725 18.504L10.593 24.4575L9 26.0505L2.25 19.3005V17.7075L9 10.9575L10.593 12.5505ZM26.343 10.9575L24.75 12.5505L30.7058 18.504L24.75 24.4575L26.343 26.0505L33.093 19.3005V17.7075L26.343 10.9575ZM11.043 29.25L13.0545 30.258L24.3045 7.758L22.293 6.75L11.043 29.25Z"
+                      fill="#02c39a"
+                    />
+                  </svg>
+                </div>
+                <h1>Web development</h1>
+              </div>
+              <p>
+                We cover everything from custom coding to content management
+                systems, ensuring that your site is not only aesthetically
+                pleasing but also robust and user-friendly.
+              </p>
+              <a href="mailto: ishimweeric2013@gmail.com"> Reach out</a>
             </div>
-            <div class="language-list">
-                <ul>
-                <li>English &hyphen; <span>Fluent</span> </li>
-                <li>French &hyphen; <span>Fluent</li>
-                <li>Kinyarwanda &hyphen; <span>Fluent</li> 
-            </ul>
-            </div>     
+          </div>
         </div>
-    </main>
-    
-</section>
+      </div>
 
+      <div class="projects-container">
+        <div class="title">
+          <h2>Showcasing Creativity in Action: Our Project Portfolio</h2>
+          <h1>
+            Discover our finest projects, where creativity and innovation come
+            together to create designs that captivate and solutions that drive
+            success.
+          </h1>
+        </div>
 
-    <main>
-        <div class="schools">
-            <h1>schools</h1>
-            <div class="school-icon">
-                <i class="fa fa-school"></i>
-            </div>
-            <div class="school-list">
-                <ul>
-                <li class="heading"><h3>In 2013-2018</h3></li>
-                <li>Studied MPC(Mathematics Physics Computer Science) <br> at <span>Lycee de Kigali</span> </li>
-                <li class="heading"><h3>In 2019-2022</h3></li>
-                <li>Majoring in Software Engineering <br> at <span>AUCA(Adventist University of Central Africa)</span> </li> 
-            </ul>
-            </div>     
-        </div>
-    </main>
-        
-    <main>
-        <div class="experience">
-            <h1>Experience</h1>
-            <div class="experience-text">
-                <p>
-                    I have worked on a website recently called Last Call messages
-                    which was basically a church website, but my biggest role is 
-                    the design using Figma.
-                    Here is a figma link: <a href="https://www.figma.com/file/OZcu1wRDOYX7vc38Nx5PTg/The-Last-Call-Messages">Figma link</a>
-                </p>
-    
-                <p>
-                    There is 
-                </p>
-            </div>
-            
-        </div>
-    </main>
-        
-        <!-- projects -->
- 
+        <div class="cards-container">
+          <div class="project-card">
+            <img
+              src="https://cdn.dribbble.com/users/1612753/screenshots/15271695/media/b26c037139073de70414f7b1f55621f0.png?resize=1000x750&vertical=center"
+              alt=""
+            />
+            <!-- <h2>Mufasa project</h2> -->
+            <a href="">Read more</a>
+          </div>
 
- 
+          <div class="project-card">
+            <img
+              src="https://cdn.dribbble.com/userupload/4359639/file/original-f838e07dc26429c1b48ffdeca4f01745.jpg?resize=1024x768"
+              alt=""
+            />
+            <!-- <h2>Mufasa project</h2> -->
+            <a href="">Read more</a>
+          </div>
+        </div>
+      </div>
 
-    <footer>
-        <div class="address">
-            <p>Country: Rwanda</p>
-            <p>City: Kigali</p>
-            <p>KG 661st, 3 KK AV 4</p>
+      <div class="contacts-container">
+        <div class="contact-banner">
+          <h1>Our clients' happiness is our satisfaction</h1>
         </div>
-        <!-- social media -->
-        <div class="telephone">
-            <p>Phone: 250 788251734</p>
-            <p>Email: ishimweeric2013@gmail.com</p>
+        <div class="card">
+          <img src="./icons/Gmail.png" alt="" />
+          <div class="content">
+            <h2>Make your dream come true!</h2>
+            <a href="mailto: ishimweeric2013@gmail.com">
+              ishimweeric2013@gmail.com</a
+            >
+          </div>
         </div>
-        <p>Copyright&copy;2022, EI all rights reserved</p>
-    </footer>
-</body>
+      </div>
+    </div>
+  </body>
 </html>
